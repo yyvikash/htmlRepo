@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            height: 550px;
+            width: 100%;
+            background: url("img3.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .shadow{
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            opacity: 1;
+            padding: 20px 35px;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        .logo{
+            color: white;
+            font-weight: bold;
+        }
+        .links{
+            margin-right: 40px;
+        }
+        .links a{
+            text-decoration: none;
+            color: white;
+            margin: 0px 15px;
+            transition: all 1s;
+            
+        }
+        .links a:hover{
+            color: orangered;
+            border-bottom: 2px solid orangered;
+            transition: all 1s;
+        }
+        .img-box{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .detail-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .detail-box button{
+            margin-top: 10px;
+            height: 40px;
+            width: 130px;
+            color: white;
+            border: 3px solid orangered;
+            border-radius: 3px;
+            background: none;
+            cursor: pointer;
+        }
+        #mid-container{
+            height: 550px;
+            width: 100%;
+            padding: 15px 30px;
+        }
+        #mid-container h1{
+            color: orangered;
+            text-align: center;
+        }
+
+        #about-box {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            padding: 20px;
+        }
+        .about-box img{
+            border-radius: 5px;
+        }
+        .self-desc{
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            line-height: 30px;
+        }
+        .footer{
+            height: 250px;
+            width: 100%;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(128, 128, 128, 0.151);
+        }
+        .skills{
+            width: 30%;
+
+        }
+        .skill-level{
+            width: 65%;
+            margin-top: 20px;
+        }
+        .line{
+            width: 100%;
+            height: 4px;
+            background: gray;
+            border-radius: 5px;
+        }
+        .level{
+            margin-top: 5px;
+            height: 4px;
+            border-radius: 5px;
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shadow">
+            <nav>
+                <div class="logo">✡️ METAFOX</div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#mid-container">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            <div class="img-box"><img src="man.jpg" alt="" height="100" width="100" style="border-radius: 50%;">
+            </div>
+            <div class="detail-box">
+                <h1 style="color: orangered;">ERIC BRADLEY</h1>
+                <div style="color: white;word-spacing: 5px;">I'M A WEB DESIGNER</div>
+                <button type="button">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+    <div id="mid-container">
+        <h1>AB<span style="border-bottom: 2px solid orangered;">OUT </span>ME</h1>
+        <div id="about-box">
+            <img src="man.jpg" alt="eric image" height="340px">
+            <div style="margin-left: 50px;">
+                <h2>Hello, I'm Eric</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eos, dolorum quibusdam quam eveniet amet! Veniam similique deleniti laboriosam accusamus impedit numquam quo. Ducimus porro voluptatem optio earum atque nostrum.
+                Rem animi iusto aut, eos quas quibusdam expedita temporibus alias repellat excepturi vel harum inventore minus, eius eligendi illum architecto voluptates, fugit dolore? Corrupti minus sequi doloremque expedita aspernatur id.
+                </p>
+                <div class="self-desc">
+                    <div style="font-weight: bold;">
+                        Name: <br> Address: <br> Age: <br>Phone <br>Email: <br>Website
+                    </div>
+                    <div>
+                        Eric Bradely <br> 3018 East Ave <br>26 years <br>202-555-0100 <br> eric@gmail.com <br> www.ericweb.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="skills">
+            <h1>My Skills</h1>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at expedita, placeat perspiciatis architecto, tenetur quae rem et harum ducimus aliquam ullam iusto saepe. Rerum incidunt nihil illo veniam soluta?
+            </div>
+        </div>
+        <div class="skill-level">
+            HTML
+            <div class="line">
+                <div class="level" style="width: 95%;"></div>
+            </div><br>
+            CSS
+            <div class="line">
+                <div class="level" style="width: 85%;"></div>
+            </div><br>
+            Javascript
+            <div class="line">
+                <div class="level" style="width: 70%;"></div>
+            </div><br>
+            Wordpress
+            <div class="line">
+                <div class="level" style="width: 90%;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
